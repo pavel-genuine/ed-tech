@@ -2,7 +2,7 @@
     transform: scale(1.2);
     position: relative;
     z-index: 50;
-    transition: .3s;
+    transition: .5s;
 }
 
 .before{

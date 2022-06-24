@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Navbar/Navbar';
 import Header from './Header/Header';
 import Courses from './Courses/Courses';
 import Footer from './Footer/Footer';
