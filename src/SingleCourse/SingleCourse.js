@@ -21,7 +21,7 @@ const SingleCourse = (props) => {
           show ?
 
 
-            <div class="hover w-[95%]  md:w-96 bg-[white] border border-[brown] drop-shadow-2xl  md:h-[350px]">
+            <div class="hover w-[95%]  md:w-96 bg-[white] border border-[brown] drop-shadow-2xl  md:h-[400px]">
               <figure class=" rounded-xl p-8 dark:bg-slate-800 ">
 
                 <div className=''>
@@ -54,7 +54,7 @@ const SingleCourse = (props) => {
 
 
             :
-            <div class=" before inline-block  card-compact md:w-96 w-[98%]  bg-base-100 shadow-xl md:h-[370px]">
+            <div class=" before inline-block  card-compact md:w-96 w-[98%]  bg-base-100 shadow-xl md:h-[400px]">
               <figure><img src={img} alt="course" /></figure>
               <div class="card-body">
                 <h2 class="card-title text-[black]">{title}</h2>

@@ -38,8 +38,8 @@ const Header = () => {
                     <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
                 </a>
                 <ul class="p-2 bg-[grey] divide divide-y">
-                    <li><a class="btn btn-ghost normal-case text-[white]">Submenu 1</a></li>
-                    <li><a class="btn btn-ghost normal-case text-[white]">Submenu 2</a></li>
+                    <li><a class="btn btn-ghost normal-case text-[white]">Free Courses</a></li>
+                    <li><a class="btn btn-ghost normal-case text-[white]">Newsletter</a></li>
                 </ul>
             </li>
             <li><a href='/about' class="btn btn-ghost normal-case">About Us</a></li>
