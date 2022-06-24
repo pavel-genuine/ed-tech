@@ -15,7 +15,7 @@ const Course = (props) => {
                         <dt className="sr-only">teacher</dt>
                         <dd className="text-slate-400"> Instructor : {tutor}</dd>
                     </div>
-                    <div className='flex md:hiden flex-col items-center text-center '>
+                    <div className='flex md:hidden flex-col items-center text-center '>
                         <img className='w-20 h-20 border border-[brown] p-1 mt-1 rounded-full'
                             src={img2}
                             alt="" />
@@ -37,7 +37,7 @@ const Course = (props) => {
 
                             <div className=" flex flex-col items-center justify-center">
                                 <h1 className='font-semibold text-[gray]'>Guided by</h1>
-                                <img className='w-20 rounded-full border border-[brown]' src={img2} alt="" />
+                                <img className='w-20 h-20 border border-[brown] p-1 mt-1 rounded-full' src={img2} alt="" />
                                 <dd>{guided}</dd>
                             </div>
                         </div>
