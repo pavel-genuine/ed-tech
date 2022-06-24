@@ -1,0 +1,12 @@
+.hover{
+    transform: scale(1.2);
+    position: relative;
+    z-index: 50;
+    transition: .3s;
+}
+
+.before{
+
+    position: relative;
+    color:#f2ebd8;
+}
