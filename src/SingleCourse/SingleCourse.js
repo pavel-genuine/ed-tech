@@ -21,16 +21,16 @@ const SingleCourse = (props) => {
           show ?
 
 
-            <div class="hover w-[95%]  md:w-96 bg-[white] border border-[brown] drop-shadow-2xl  md:h-[400px]">
+          <div class="hover w-[95%]  md:w-96 bg-[white] border border-[brown] drop-shadow-2xl  md:h-[400px]">
               <figure class=" rounded-xl p-8 dark:bg-slate-800 ">
 
                 <div className=''>
-                  <img class="w-24 border-2 border-[brown] rounded-full mx-auto h-24 "
+                <a href="/about"><img class="w-24 border-2 border-[brown] rounded-full mx-auto h-24 "
                     src={img2}
-                    alt="" width="384" height="512" />
+                    alt="" width="384" height="512" /></a>
                   <figcaption class=" text-center font-medium">
                     <div class="text-[brown]">
-                      {guided}
+                      <a href="/about">{guided}</a>
                     </div>
                     <div>
                       Scholar of Hadith & Fiqh
@@ -39,8 +39,8 @@ const SingleCourse = (props) => {
                 </div>
                 <div class="pt-6 space-y-4">
                   <blockquote>
-                    <p class="text-lg font-medium">
-                      {title}
+                    <p  class="text-lg font-medium hover:text-[brown]">
+                    <a href={`/${id}`}>{title}</a>
                     </p>
                     <p title={description} className='text-xs color-[grey]'>{description.slice(0, 80)}...</p>
                   </blockquote>

@@ -1,0 +1,11 @@
+.cover{
+
+    background-repeat: no-repeat;
+
+}
+
+.under{
+    position: relative;
+    /* z-index: 0; */
+    
+}

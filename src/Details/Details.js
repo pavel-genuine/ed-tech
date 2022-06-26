@@ -1,5 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router';
+import EnrollCourse from '../EnrollCourse/EnrollCourse';
+import Loading from '../Shared/Loading';
 import useCourses from '../Shared/useCourses';
 
 
@@ -14,18 +16,15 @@ const Details = () => {
 
     const course = courses?.find(item => id == item?.id)
 
-    // const { tutor, title, img, description, duration, lectures, topic } = course
-
-
     console.log(courses, course);
 
     if (!courses.length) {
-        return <p>loading...</p>
+        return <Loading></Loading>
     }
 
     return (
         <div className='w-[80%] mx-auto py-10 md:grid grid-cols-8 gap-10'>
-
+            
             <div className='col-span-6'>
                 <h1 className='text-xl md:text-4xl mb-8 font-semibold mt-20'>
                     {course?.title}
@@ -83,8 +82,8 @@ const Details = () => {
             </div>
 
             <div className='mt-20   '>
-                <p className='md:fixed divide divide-y border md:w-[300%] border-t-white p-5 '>
-                <button className='btn bg-[grey] text-[white] border-none md:w-[7%] '> Enroll Now </button>
+                <p className=' divide divide-y border md:w-[300%] border-t-white p-5 '>
+                <button className='btn bg-[grey] text-[white] border-none  hover:bg-[brown] '> <a href={`/enroll/${course?.id}`}>Enroll Now</a> </button>
            
            <p className='my-7 font-semibold text-lg'>Enrolled Student : 2k +</p>
            <p className='my-7 font-semibold text-lg'>Lectures : {course?.lectures}</p>

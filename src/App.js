@@ -11,6 +11,9 @@ import About from './About/About';
 import SignUp from './Auth/SignUp/SignUp';
 import SignIn from './Auth/SignIn/SignIn';
 import ContactUs from './ContactUs/ContactUs';
+import Profile from './Profile/Profile';
+import EditProfile from './EditProfile/EditProfile';
+import EnrollCourse from './EnrollCourse/EnrollCourse';
 
 function App() {
   return (
@@ -19,12 +22,15 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/:id' element={<Details></Details>} ></Route>
+        <Route path='/enroll/:id' element={<EnrollCourse></EnrollCourse>} ></Route>
 
         <Route path='/courses' element={<AllCourses></AllCourses>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/contact' element={<ContactUs></ContactUs>}></Route>
         <Route path='/sign-up' element={<SignUp></SignUp>}></Route>
         <Route path='/sign-in' element={<SignIn></SignIn>}></Route>
+        <Route path='/profile' element={<Profile></Profile>}></Route>
+        <Route path='/edit-profile' element={<EditProfile></EditProfile>}></Route>
 
       </Routes>
       <Footer></Footer>

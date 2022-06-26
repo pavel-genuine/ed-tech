@@ -76,7 +76,7 @@ const Course = (props) => {
                         </div>
 
                         <div className="flex-none w-full mt-2 font-normal mt-5">
-                            <a href={`/${id}`}> <button className='btn btn-sm border-none bg-[brown]'>Detail</button>
+                            <a href={`/${id}`}> <button className='btn btn-xs border-none bg-[brown]'>Detail</button>
                             </a>
                         </div>
                     </dl>

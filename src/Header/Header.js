@@ -101,28 +101,28 @@ const Header = () => {
 
                                 user && <div class="dropdown dropdown-end ">
                                     <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                                        <div class="w-10 border border-[brown] rounded-full ml-2 ">
+                                        <div  class="w-10 border border-[brown] rounded-full ml-2 " >
                                             <img
                                                 src="https://i.stack.imgur.com/frlIf.png" />
                                         </div>
                                     </label>
-                                    <ul tabindex="0" class=" w-[500%] flex flex-col justify-center items-center dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                                    <ul tabindex="0" class=" w-[450%] card card-compact flex flex-col justify-center items-center dropdown-content mt-3 p-2 shadow-xl bg-base-100 rounded-box w-52">
                                         <li>
                                             <img className='w-16 border border-[brown]  rounded-full mx-auto'
                                                 src="https://i.stack.imgur.com/frlIf.png" />
                                         </li>
 
-                                        <li className='font-semibold p-2 m-2'>{user.email}</li>
+                                        <li className='font-semibold text-s my-2 break-all'>{user.email}</li>
 
                                         <li>
 
-                                            <a class="  btn bg-[brown] border-none text-[white] btn-sm justify-between">
+                                            <a href='/profile' class="  btn bg-[brown] border-none text-[white] btn-xs justify-between">
                                                 View Profile
                                             </a>
                                         </li>
                                         <div class="divider"></div>
-                                        <li><a className='btn btn-outline btn-sm'>Settings</a></li>
-                                        <li><a onClick={logout} className='btn my-3 btn-sm'>Logout</a></li>
+                                        <li><a className='btn btn-outline btn-xs'>Settings</a></li>
+                                        <li><a onClick={logout} className='btn my-3 btn-xs'>Logout</a></li>
                                     </ul>
                                 </div>
 
