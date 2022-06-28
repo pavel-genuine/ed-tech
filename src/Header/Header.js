@@ -1,6 +1,7 @@
 import { signOut } from 'firebase/auth';
 import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import CustomLink from '../CustomLink/CustomLink';
 import auth from '../firebase.init';
 import './Header.css'
 
@@ -30,44 +31,37 @@ const Header = () => {
     window.addEventListener('scroll', changeBackground)
 
     const menuItems =
-        <> <li><a class="btn btn-ghost normal-case" href='/'>Home</a></li>
-            <li><a class="btn btn-ghost normal-case" href='/courses'>All Courses</a></li>
-            <li tabindex="0">
-                <a class="btn btn-ghost normal-case">
-                    Explore More
-                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
-                </a>
-                <ul class="p-2 bg-[grey] divide divide-y">
-                    <li><a class="btn btn-ghost normal-case text-[white]">Free Courses</a></li>
-                    <li><a class="btn btn-ghost normal-case text-[white]">Newsletter</a></li>
-                </ul>
-            </li>
-            <li><a href='/about' class="btn btn-ghost normal-case">About Us</a></li>
-            <li><a href='/contact' class="btn btn-ghost normal-case">Contact Us</a></li>
+        <>
+            <CustomLink class=" btn-ghost hover:rounded md:p-3 md:m-5" to='/'>Home</CustomLink>
+            <CustomLink class="btn-ghost hover:rounded md:p-3 md:m-5" to='/courses'>All Courses</CustomLink>
+            <CustomLink class="btn-ghost hover:rounded md:p-3 md:m-5" to='/more'>Explore More</CustomLink>
+
+            <CustomLink class="btn-ghost hover:rounded md:p-3 md:m-5" to='about'> About Us</CustomLink>
+            <CustomLink class="btn-ghost hover:rounded md:p-3 md:m-5" to='/contact'>Contact Us</CustomLink>
         </>
 
 
     return (
         <div className=''>
 
-            <div id='navbar' className={background ?
-                'nav bg-[white]   text-[black] shadow '
+            <div id='' className={background ?
+                'nav bg-[white] bg-opacity-60  backdrop-filter backdrop-blur-sm   text-[black] shadow '
                 :
-                'nav text-[black]  shadow'}>
+                'nav text-[black] bg-opacity-60  backdrop-filter-none backdrop-blur-sm shadow'}>
                 <div class="navbar w-[95%] mx-auto ">
                     <div class="navbar-start">
                         <div class="dropdown">
                             <label tabindex="0" class="btn btn-ghost lg:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                             </label>
-                            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                            <ul tabindex="0" class="menu menu-compact bg-[white] dropdown-content mt-3 p-2 shadow  rounded-box w-52">
                                 {menuItems}
                             </ul>
                         </div>
                         <a href='/' class="btn btn-ghost normal-case text-xl">Islamicademy</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
-                        <ul class="menu menu-horizontal p-0">
+                        <ul class="menu menu-horizontal mt-[1%] pb-[.6%]">
                             {menuItems}
                         </ul>
                     </div>
@@ -101,7 +95,7 @@ const Header = () => {
 
                                 user && <div class="dropdown dropdown-end ">
                                     <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                                        <div  class="w-10 border border-[brown] rounded-full ml-2 " >
+                                        <div class="w-10 border border-[brown] rounded-full ml-2 " >
                                             <img
                                                 src="https://i.stack.imgur.com/frlIf.png" />
                                         </div>
