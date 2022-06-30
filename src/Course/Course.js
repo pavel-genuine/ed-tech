@@ -8,7 +8,7 @@ const Course = (props) => {
     return (
         <div>
             <article className="flex my-3 flex-col md:flex-row md:items-start space-x-6 md:p-3">
-                <img src={img} alt="" className="flex-none w-80  rounded-md bg-slate-100" />
+                <img loading='lazy' src={img} alt="" className="flex-none w-80  rounded-md bg-slate-100" />
                 <div className="min-w-0 relative flex-auto">
                     <h2 className="font-semibold text-slate-900 truncate pr-20">{title}</h2>
                     <div className="flex-none w-full mt-2 font-normal">
@@ -16,7 +16,7 @@ const Course = (props) => {
                         <dd className="text-slate-400"> Instructor : {tutor}</dd>
                     </div>
                     <div className='flex md:hidden flex-col items-center text-center '>
-                        <img className='w-20 h-20 border border-[brown] p-1 mt-1 rounded-full'
+                        <img loading='lazy' className='w-20 h-20 border border-[brown] p-1 mt-1 rounded-full'
                             src={img2}
                             alt="" />
                         <p className='mb-1 '>
@@ -37,7 +37,7 @@ const Course = (props) => {
 
                             <div className=" flex flex-col items-center justify-center">
                                 <h1 className='font-semibold text-[gray]'>Guided by</h1>
-                                <img className='w-20 h-20 border border-[brown] p-1 mt-1 rounded-full' src={img2} alt="" />
+                                <img loading='lazy' className='w-20 h-20 border border-[brown] p-1 mt-1 rounded-full' src={img2} alt="" />
                                 <dd>{guided}</dd>
                             </div>
                         </div>

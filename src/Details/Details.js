@@ -30,7 +30,7 @@ const Details = () => {
                     {course?.title}
                 </h1>
                 <div className='md:flex items-center'>
-                    <img className='w-20 h-20 border border-[brown] p-1 mr-5 rounded-full'
+                    <img loading='lazy' className='w-20 h-20 border border-[brown] p-1 mr-5 rounded-full'
                         src={course?.img2}
                         alt="" />
                     <p className='mb-3 mr-20'>
@@ -50,7 +50,7 @@ const Details = () => {
                     <div class="divider mt-4 col-span-7"></div>
                 </div>
 
-                <img className='my-5' src={course?.img} alt="" />
+                <img loading='lazy' className='my-5' src={course?.img} alt="" />
 
                 <p>{course?.description}</p>
                 <p>
@@ -67,7 +67,7 @@ const Details = () => {
                 </div>
 
                 <div className='md:flex mt-10'>
-                    <img className='w-60 p-1 border border-[brown]'
+                    <img loading='lazy' className='w-60 p-1 border border-[brown]'
                         src={course?.img2}
                         alt="" />
                     <p className='ml-5'>

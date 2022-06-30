@@ -28,13 +28,13 @@ const EnrollCourse = (props) => {
                 <div class="">
                     <div className='card'>
                         <div class=" before inline-block  card-compact md:w-96 w-[100%]  bg-base-100 shadow-xl">
-                            <figure><img src="https://learn.sapienceinstitute.org/wp-content/uploads/2022/03/WhatsApp-Image-2022-03-26-at-8.08.13-PM.jpeg"
+                            <figure><img loading='lazy' src="https://learn.sapienceinstitute.org/wp-content/uploads/2022/03/WhatsApp-Image-2022-03-26-at-8.08.13-PM.jpeg"
                                 alt="course" /></figure>
 
                             <div class="card-body h-auto">
                                 <h2 class="card-title text-base text-[black]">The Divine Reality: Islamic Theism & The Mirage of Atheism</h2>
                                 <div className='flex flex-col items-center text-center '>
-                                    <img className='w-20 h-20 border border-[brown] p-1 mt-1 rounded-full'
+                                    <img loading='lazy' className='w-20 h-20 border border-[brown] p-1 mt-1 rounded-full'
                                         src="https://video.fdac110-1.fna.fbcdn.net/v/t39.30808-6/271238588_251974533685091_641784035517746710_n.png?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHHwthfnn9yxV0n66sqjaGPcE2g04GUFsNwTaDTgZQWwysDHMnVN_2mXQvPK2hVJpupGuzll_ZohjUEY1F3yKHN&_nc_ohc=0CqqCHBqFL0AX8cWPtd&_nc_ht=video.fdac110-1.fna&oh=00_AT9-PPkDFKwTibiCIXwPX_W7-SOYumWuDvx3_KS_L0U69g&oe=62B85D30"
 
                                         alt="" />

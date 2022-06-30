@@ -27,8 +27,8 @@ const About = () => {
             <div>
 
             <div className='md:flex mb-5'>
-                <img className='w-60 border border-[brown]'
-                src="https://video.fdac110-1.fna.fbcdn.net/v/t39.30808-6/276131457_301446835404527_1327569203727961504_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeEzOE_jmRvDJFkqi5NORceS_2prK4G-1sL_amsrgb7WwribcSY9Q1UczhN1fin0TB-dGy_7KbdmNHbyRbsXsvgk&_nc_ohc=DqOY9M8_SGcAX8Bd0sE&_nc_ht=video.fdac110-1.fna&oh=00_AT9QJyKuN31bwYupN1XRVV18fFuVUdevkenb25E4B2n_0A&oe=62B91A68"
+                <img loading='lazy' className='w-60 border border-[brown]'
+                src="https://i.ibb.co/wcKw41d/276131457-301446835404527-1327569203727961504-n.jpg"
                  alt="" />
                 <p className='m-5'>
                     <p className='font-semibold text-[brown] mb-3'>Shaykh Muhammad Zakaria Abdullah</p>
@@ -36,25 +36,25 @@ const About = () => {
                 </p>
             </div>
             <div className='md:flex mb-5'>
-                <img className='w-60 border border-[brown]'
-                src="https://video.fdac110-1.fna.fbcdn.net/v/t39.30808-6/275444303_287424530140091_1880220703674029605_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeH-yLg2yg4uWExCurckblSjyBEKCw8H2cXIEQoLDwfZxb35knuvHzsit74uAmx1w6xTYqHvpr-zMlBnaIlqT6I6&_nc_ohc=XKP6DYm-KeoAX9Gl5KG&_nc_ht=video.fdac110-1.fna&oh=00_AT9k4IQLMyEGs0Gu9Cb0Baxn9K14TAOWhrcWG89wfm-kEA&oe=62B9B60F"
-                 alt="" />
+                <img loading='lazy' className='w-60 border border-[brown]'
+      src="https://i.ibb.co/FnM0Mkh/275444303-287424530140091-1880220703674029605-n.jpg" 
+       alt="" />
                 <p className='m-5'>
                     <p className='font-semibold text-[brown] mb-3'>Shaykh Sharif Muhammad</p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsum quo voluptates repellat explicabo. Natus ut accusamus debitis, est, suscipit perspiciatis quidem incidunt velit iusto fugiat quam soluta nihil! Dolorem . lorem
                 </p>
             </div>
             <div className='md:flex mb-5'>
-                <img className='w-60 border border-[brown]'
-                src="https://video.fdac110-1.fna.fbcdn.net/v/t39.30808-6/275487714_287930880089456_3824566931422400295_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHQeipvHooSaitqhgO2nHs-S9qcO8KZmZBL2pw7wpmZkHRoJiyRQ11qIX4yEOJVmdazPcJbnCFGR752b7fz9VJ6&_nc_ohc=w5oed8wh4ukAX-PbEEh&_nc_ht=video.fdac110-1.fna&oh=00_AT9OiRDWtsS57a95BQx0ixjA0tldefJ9I8te-ybeV9359Q&oe=62B941FF"
-                 alt="" />
+                <img loading='lazy' className='w-60 border border-[brown]'
+      src="https://i.ibb.co/g7sHM8x/275487714-287930880089456-3824566931422400295-n.jpg"
+      alt="" />
                 <p className='m-5'>
                     <p className='font-semibold text-[brown] mb-3'>Shaykh Tahmidul Mawla</p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsum quo voluptates repellat explicabo. Natus ut accusamus debitis, est, suscipit perspiciatis quidem incidunt velit iusto fugiat quam soluta nihil! Dolorem . lorem
                 </p>
             </div>
             <div className='md:flex mb-5'>
-                <img className='w-60 border border-[brown]'
+                <img loading='lazy' className='w-60 border border-[brown]'
                 src="https://learn.sapienceinstitute.org/wp-content/uploads/2022/01/ouridrissssiiii.png"
                  alt="" />
                 <p className='m-5'>
@@ -63,7 +63,7 @@ const About = () => {
                 </p>
             </div>
             <div className='md:flex mb-5'>
-                <img className='w-60 border border-[brown]'
+                <img loading='lazy' className='w-60 border border-[brown]'
                 src="https://learn.sapienceinstitute.org/wp-content/uploads/2022/01/ourhamza-1.png"
                  alt="" />
                 <p className='m-5'>
@@ -72,7 +72,7 @@ const About = () => {
                 </p>
             </div>
             <div className='md:flex mb-5'>
-                <img className='w-60 border border-[brown]'
+                <img loading='lazy' className='w-60 border border-[brown]'
                 src="https://learn.sapienceinstitute.org/wp-content/uploads/2022/01/ourosman-1.png"
                  alt="" />
                 <p className='m-5'>
@@ -81,7 +81,7 @@ const About = () => {
                 </p>
             </div>
             <div className='md:flex mb-5'>
-                <img className='w-60 border border-[brown]'
+                <img loading='lazy' className='w-60 border border-[brown]'
                 src="https://assets-jpcust.jwpsrv.com/thumbnails/nwrs01hm-720.jpg"
                  alt="" />
                 <p className='m-5'>

@@ -54,7 +54,7 @@ const Profile = () => {
 
                     <div style={{ zIndex: '20' }} className='relative bg-[white] pt-20  mx-auto '>
 
-                        <img class="md:w-36 w-32 border border-[white] border-4 absolute bottom-[95%] right-[61%]  md:bottom-[92%] md:right-[81%]  rounded-full  "
+                        <img  class="md:w-36 w-32 border border-[white] border-4 absolute bottom-[95%] right-[61%]  md:bottom-[92%] md:right-[81%]  rounded-full  "
                             src="https://i.stack.imgur.com/frlIf.png" alt='' />
 
                         <a href="/edit-profile"><button className='absolute bottom-[94.5%] right-[2%]  md:bottom-[92%] md:right-[1%] btn btn-xs my-3 border-[white]'>Edit profile</button></a>

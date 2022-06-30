@@ -26,7 +26,7 @@ const SingleCourse = (props) => {
               <figure class=" rounded-xl p-8 dark:bg-slate-800 ">
 
                 <div className=''>
-                <a href="/about"><img class="w-24 border-2 border-[brown] rounded-full mx-auto h-24 "
+                <a href="/about"><img loading='lazy' class="w-24 border-2 border-[brown] rounded-full mx-auto h-24 "
                     src={img2}
                     alt="" width="384" height="512" /></a>
                   <figcaption class=" text-center font-medium">
@@ -57,7 +57,7 @@ const SingleCourse = (props) => {
 
             :
             <div class=" before inline-block  card-compact md:w-[90%]  bg-base-100 shadow md:h-[400px]">
-              <figure><img src={img} alt="course" /></figure>
+              <figure><img loading='lazy' src={img} alt="course" /></figure>
               <div class="card-body">
                 <h2 class="card-title text-[black]">{title}</h2>
                 <p className='text-[black]'>Instructor : {tutor}</p>
@@ -93,7 +93,7 @@ const SingleCourse = (props) => {
 
       <div className='md:hidden'>
         <div class=" before inline-block  card-compact md:w-96 w-[100%]  bg-base-100 shadow-xl md:h-[350px]">
-          <figure><img src={img} alt="course" /></figure>
+          <figure><img loading='lazy' src={img} alt="course" /></figure>
 
 
 
@@ -101,7 +101,7 @@ const SingleCourse = (props) => {
           <div class="card-body">
             <h2 class="card-title text-base text-[black]">{title}</h2>
             <div className='flex flex-col items-center text-center '>
-              <img className='w-20 h-20 border border-[brown] p-1 mt-1 rounded-full'
+              <img loading='lazy' className='w-20 h-20 border border-[brown] p-1 mt-1 rounded-full'
                 src={img2}
                 alt="" />
               <p className='mb-1 '>

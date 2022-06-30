@@ -42,10 +42,10 @@ const Header = () => {
 
 
     return (
-        <div className=''>
+        <div>
 
             <div id='' className={background ?
-                'nav bg-[white] bg-opacity-60  backdrop-filter backdrop-blur-sm   text-[black] shadow '
+                'nav bg-[black] bg-opacity-60  backdrop-filter backdrop-blur-sm   text-[white] shadow '
                 :
                 'nav text-[black] bg-opacity-60  backdrop-filter-none backdrop-blur-sm shadow'}>
                 <div class="navbar w-[95%] mx-auto ">
@@ -54,11 +54,11 @@ const Header = () => {
                             <label tabindex="0" class="btn btn-ghost lg:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                             </label>
-                            <ul tabindex="0" class="menu menu-compact bg-[white] dropdown-content mt-3 p-2 shadow  rounded-box w-52">
+                            <ul tabindex="0" class="menu menu-compact bg-neutral bg-opacity-60 dropdown-content mt-3 p-2 shadow  rounded-box w-52">
                                 {menuItems}
                             </ul>
                         </div>
-                        <a href='/' class="btn btn-ghost normal-case text-xl">Islamicademy</a>
+                        <a href='/' class="btn btn-ghost normal-case text-xl y">Islamicademy</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal mt-[1%] pb-[.6%]">
@@ -82,8 +82,8 @@ const Header = () => {
                                             <span class="badge bg-[brown] border-none text-[white] badge-sm indicator-item">3</span>
                                         </div>
                                     </label>
-                                    <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
-                                        <div class="card-body">
+                                    <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-[black] bg-opacity-60 shadow">
+                                        <div class="card-body text-[white] ">
                                             <p> <span class="font-bold">1 Items  </span>  <span class="text-info">Awesome</span>   </p>
                                             <p>  <span class="font-bold">2 Items  </span>  <span class="text-info">Outstanding</span>   </p>
                                             <p>  <span class="font-bold">3 Items  </span>  <span class="text-info">xciting</span>   </p>
@@ -100,13 +100,13 @@ const Header = () => {
                                                 src="https://i.stack.imgur.com/frlIf.png" />
                                         </div>
                                     </label>
-                                    <ul tabindex="0" class=" w-[450%] card card-compact flex flex-col justify-center items-center dropdown-content mt-3 p-2 shadow-xl bg-base-100 rounded-box w-52">
+                                    <ul tabindex="0" class=" w-[450%] card card-compact flex flex-col justify-center items-center dropdown-content mt-3 p-2 shadow-xl bg-[black] bg-opacity-60 rounded-box w-52">
                                         <li>
                                             <img className='w-16 border border-[brown]  rounded-full mx-auto'
                                                 src="https://i.stack.imgur.com/frlIf.png" />
                                         </li>
 
-                                        <li className='font-semibold text-s my-2 break-all'>{user.email}</li>
+                                        <li className='font-semibold text-[white] text-s my-2 break-all'>{user.email}</li>
 
                                         <li>
 
@@ -115,7 +115,7 @@ const Header = () => {
                                             </a>
                                         </li>
                                         <div class="divider"></div>
-                                        <li><a className='btn btn-outline btn-xs'>Settings</a></li>
+                                        <li><a className='btn btn-outline btn-xs text-[white]'>Settings</a></li>
                                         <li><a onClick={logout} className='btn my-3 btn-xs'>Logout</a></li>
                                     </ul>
                                 </div>
