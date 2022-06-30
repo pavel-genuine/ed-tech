@@ -54,23 +54,25 @@ const Profile = () => {
 
                     <div style={{ zIndex: '20' }} className='relative bg-[white] pt-20  mx-auto '>
 
-                        <img  class="md:w-36 w-32 border border-[white] border-4 absolute bottom-[95%] right-[61%]  md:bottom-[92%] md:right-[81%]  rounded-full  "
+                        <img class="md:w-36 w-32 border border-[white] border-4 absolute bottom-[95%] right-[61%]  md:bottom-[92%] md:right-[81%]  rounded-full  "
                             src="https://i.stack.imgur.com/frlIf.png" alt='' />
 
                         <a href="/edit-profile"><button className='absolute bottom-[94.5%] right-[2%]  md:bottom-[92%] md:right-[1%] btn btn-xs my-3 border-[white]'>Edit profile</button></a>
 
+                        <div className='w-[98%] mt-[-8%] md:mt-[-3%] overflow-x-auto'>
+                            <p class=" ml-4 md:ml-5 word-break md:text-2xl text-[black] text-lg leading-6 font-medium  rounded ">{user?.displayName}</p>
 
-                        <p class=" absolute bottom-[91.5%] right-[34%]  md:bottom-[85%] md:right-[64.5%] md:text-2xl text-[black] text-lg leading-6 font-medium  rounded ">{user?.email}</p>
+                        </div>
 
                         <div class="shadow overflow-hidden sm:rounded-b-lg ">
 
                             <div class=" border-gray-200">
-                                <dl className='pt-4 md:pt-10'>
+                                <dl className='md:pt'>
 
                                     <div class=" bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 
                                         <dt class="text-sm font-medium text-gray-500">Full name</dt>
-                                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">User Name</dd>
+                                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{user?.displayName}</dd>
                                     </div>
                                     <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                                         <dt class="text-sm font-medium text-gray-500">Profile status</dt>
