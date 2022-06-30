@@ -1,6 +1,7 @@
 import { signOut } from 'firebase/auth';
 import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link } from 'react-router-dom';
 import CustomLink from '../CustomLink/CustomLink';
 import auth from '../firebase.init';
 import './Header.css'
@@ -58,7 +59,7 @@ const Header = () => {
                                 {menuItems}
                             </ul>
                         </div>
-                        <a href='/' class="btn btn-ghost normal-case text-xl y">Islamicademy</a>
+                        <Link to='/' class="btn btn-ghost normal-case text-xl y">Islamicademy</Link>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal mt-[1%] pb-[.6%]">
@@ -71,7 +72,7 @@ const Header = () => {
                     <div class="navbar-end">
                         <div class="flex items-center ">
 
-                            <a href='/courses' class="btn btn-sm border-none md:mx-20 bg-[brown] hidden normal-case text-[white]"> SUBSCRIBE </a>
+                            <Link to='/courses' class="btn btn-sm border-none md:mx-20 bg-[brown] hidden normal-case text-[white]"> SUBSCRIBE </Link>
 
                             {
                                 user &&
@@ -95,31 +96,31 @@ const Header = () => {
 
                                 user && <div class="dropdown dropdown-end ">
                                     <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                                        <div class="w-10 border border-[brown] rounded-full" >
+                                        <div class="w-9 border border-[brown] rounded-full" >
                                             <img className=''
                                                 src="https://i.stack.imgur.com/frlIf.png" />
                                         </div>
                                     </label>
-                                    <ul tabindex="0" class="space-y-4 divide divide-y  w-[450%] card card-compact  dropdown-content pl-4 pr-1 pt-4 pb-4 shadow-xl bg-[black] bg-opacity-60 rounded-box w-52">
+                                    <ul tabindex="0" class="space-y-4 divide divide-y mt-2  w-[450%] card card-compact  dropdown-content pl-4 pr-1 pt-4 pb-4 shadow-xl bg-[black] bg-opacity-60 rounded-box w-52">
 
 
 
                                         <div className='space-y-2'>
-                                        <a href="/profile">
+                                        <Link to="/profile">
                                             <li>
                                                 <img className='w-14 border border-[brown]  rounded-full'
                                                     src="https://i.stack.imgur.com/frlIf.png" />
                                             </li>
-                                            </a>
-                                            <a href="/profile">
+                                            </Link>
+                                            <Link to="/profile">
                                                 <li className='font-semibold text-[white]  text-lg hover:text-[brown]  word-break'>{user.displayName}</li>
-                                            </a>
+                                            </Link>
                                             <li className='text-[white] text-sm  break-all'>{user.email}</li>
                                             <li>
 
-                                                <a href='/profile' class="  btn bg-[brown] border-none text-[white] btn-xs mx-auto">
+                                                <Link to='/profile' class="  btn bg-[brown] border-none text-[white] btn-xs mx-auto">
                                                     View Profile
-                                                </a>
+                                                </Link>
                                             </li>
                                         </div>
 
@@ -128,7 +129,7 @@ const Header = () => {
                                         <div className='space-y-2 pt-4'>
 
                                             <li><a className='btn btn-outline btn-xs text-[white]'>Settings</a></li>
-                                            <li><a onClick={logout} className='btn btn-xs'>Logout</a></li>
+                                            <li><button onClick={logout} className='btn btn-xs'>Logout</button></li>
 
                                         </div>
 

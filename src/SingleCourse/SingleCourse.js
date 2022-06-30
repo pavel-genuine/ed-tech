@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import './SingleCourse.css'
 
@@ -26,12 +27,12 @@ const SingleCourse = (props) => {
               <figure class=" rounded-xl p-8 dark:bg-slate-800 ">
 
                 <div className=''>
-                <a href="/about"><img loading='lazy' class="w-24 border-2 border-[brown] rounded-full mx-auto h-24 "
+                <Link to="/about"><img loading='lazy' class="w-24 border-2 border-[brown] rounded-full mx-auto h-24 "
                     src={img2}
-                    alt="" width="384" height="512" /></a>
+                    alt="" width="384" height="512" /></Link>
                   <figcaption class=" text-center font-medium">
                     <div class="text-[brown]">
-                      <a href="/about">{guided}</a>
+                      <Link to="/about">{guided}</Link>
                     </div>
                     <div>
                       Scholar of Hadith & Fiqh
@@ -41,14 +42,14 @@ const SingleCourse = (props) => {
                 <div class="pt-6 space-y-4">
                   <blockquote>
                     <p  class="text-lg font-medium hover:text-[brown]">
-                    <a href={`/${id}`}>{title}</a>
+                    <Link to={`/${id}`}>{title}</Link>
                     </p>
                     <p title={description} className='text-xs color-[grey]'>{description.slice(0, 80)}...</p>
                   </blockquote>
 
                 </div>
-                <a href={`/${id}`}> <button className='btn bg-[brown] border-none rounded-none btn-sm w-[100%] my-3'>detail</button>
-                </a>
+                <Link to={`/${id}`}> <button className='btn bg-[brown] border-none rounded-none btn-sm w-[100%] my-3'>detail</button>
+                </Link>
               </figure>
 
             </div>
@@ -101,13 +102,13 @@ const SingleCourse = (props) => {
           <div class="card-body">
             <h2 class="card-title text-base text-[black]">{title}</h2>
             <div className='flex flex-col items-center text-center '>
-              <img loading='lazy' className='w-20 h-20 border border-[brown] p-1 mt-1 rounded-full'
+            <Link to="/about"><img loading='lazy' className='w-20 h-20 border border-[brown] p-1 mt-1 rounded-full'
                 src={img2}
-                alt="" />
+                alt="" /></Link>
               <p className='mb-1 '>
                 <p className='text-[gray]'>Guided by </p>
 
-                <p className='text-[brown]'>{guided}</p>
+                <Link to="/about"><p className='text-[brown]'>{guided}</p></Link>
                 {/* <p className='text-[black]'> Scholar of Hadith & Fiqh</p> */}
 
               </p>
@@ -139,7 +140,7 @@ const SingleCourse = (props) => {
                             </svg>
                         </div>
                         <div class="card-actions justify-end">
-            <a href={`/${id}`}> <button className='btn bg-[brown] border-none rounded-none btn-sm w-[100%] '>detail</button></a>
+            <Link to={`/${id}`}> <button className='btn bg-[brown] border-none rounded-none btn-sm w-[100%] '>detail</button></Link>
             </div>
           </div>
 

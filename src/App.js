@@ -14,6 +14,7 @@ import ContactUs from './ContactUs/ContactUs';
 import Profile from './Profile/Profile';
 import EditProfile from './EditProfile/EditProfile';
 import EnrollCourse from './EnrollCourse/EnrollCourse';
+import RequireAuth from './RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -29,8 +30,8 @@ function App() {
         <Route path='/contact' element={<ContactUs></ContactUs>}></Route>
         <Route path='/sign-up' element={<SignUp></SignUp>}></Route>
         <Route path='/sign-in' element={<SignIn></SignIn>}></Route>
-        <Route path='/profile' element={<Profile></Profile>}></Route>
-        <Route path='/edit-profile' element={<EditProfile></EditProfile>}></Route>
+        <Route path='/profile' element={<RequireAuth><Profile></Profile></RequireAuth>}></Route>
+        <Route path='/edit-profile' element={<RequireAuth><EditProfile></EditProfile></RequireAuth>}></Route>
 
       </Routes>
       <Footer></Footer>
