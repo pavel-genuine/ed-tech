@@ -76,8 +76,8 @@ const Header = () => {
                             {
                                 user &&
                                 <div class="dropdown dropdown-end">
-                                    <label tabindex="0" class="btn btn-ghost btn-circle">
-                                        <div class="mr-2 indicator">
+                                    <label tabindex="0" class="btn mr-1 md:mr-4 btn-ghost btn-circle">
+                                        <div class="indicator">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
                                             <span class="badge bg-[brown] border-none text-[white] badge-sm indicator-item">3</span>
                                         </div>
@@ -95,28 +95,44 @@ const Header = () => {
 
                                 user && <div class="dropdown dropdown-end ">
                                     <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                                        <div class="w-10 border border-[brown] rounded-full ml-2 " >
-                                            <img
+                                        <div class="w-10 border border-[brown] rounded-full" >
+                                            <img className=''
                                                 src="https://i.stack.imgur.com/frlIf.png" />
                                         </div>
                                     </label>
-                                    <ul tabindex="0" class=" w-[450%] card card-compact flex flex-col justify-center items-center dropdown-content mt-3 p-2 shadow-xl bg-[black] bg-opacity-60 rounded-box w-52">
-                                        <li>
-                                            <img className='w-16 border border-[brown]  rounded-full mx-auto'
-                                                src="https://i.stack.imgur.com/frlIf.png" />
-                                        </li>
+                                    <ul tabindex="0" class="space-y-4 divide divide-y  w-[450%] card card-compact  dropdown-content pl-4 pr-1 pt-4 pb-4 shadow-xl bg-[black] bg-opacity-60 rounded-box w-52">
 
-                                        <li className='font-semibold text-[white] text-s my-2 break-all'>{user.email}</li>
 
-                                        <li>
 
-                                            <a href='/profile' class="  btn bg-[brown] border-none text-[white] btn-xs justify-between">
-                                                View Profile
+                                        <div className='space-y-2'>
+                                        <a href="/profile">
+                                            <li>
+                                                <img className='w-14 border border-[brown]  rounded-full'
+                                                    src="https://i.stack.imgur.com/frlIf.png" />
+                                            </li>
                                             </a>
-                                        </li>
-                                        <div class="divider"></div>
-                                        <li><a className='btn btn-outline btn-xs text-[white]'>Settings</a></li>
-                                        <li><a onClick={logout} className='btn my-3 btn-xs'>Logout</a></li>
+                                            <a href="/profile">
+                                                <li className='font-semibold text-[white]  text-lg hover:text-[brown]  word-break'>{user.displayName}</li>
+                                            </a>
+                                            <li className='text-[white] text-sm  break-all'>{user.email}</li>
+                                            <li>
+
+                                                <a href='/profile' class="  btn bg-[brown] border-none text-[white] btn-xs mx-auto">
+                                                    View Profile
+                                                </a>
+                                            </li>
+                                        </div>
+
+
+
+                                        <div className='space-y-2 pt-4'>
+
+                                            <li><a className='btn btn-outline btn-xs text-[white]'>Settings</a></li>
+                                            <li><a onClick={logout} className='btn btn-xs'>Logout</a></li>
+
+                                        </div>
+
+
                                     </ul>
                                 </div>
 
