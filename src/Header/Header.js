@@ -49,18 +49,45 @@ const Header = () => {
                 'nav bg-[black] bg-opacity-60  backdrop-filter backdrop-blur-sm   text-[white] shadow '
                 :
                 'nav text-[black] bg-opacity-60  backdrop-filter-none backdrop-blur-sm shadow'}>
-                <div class="navbar w-[95%] mx-auto ">
-                    <div class="navbar-start">
-                        <div class="dropdown">
+                <div class="lg:navbar lg:w-[95%] mx-auto ">
+                    <div class="lg:navbar-start hidden md:block">
+                        {/* <div class="dropdown">
                             <label tabindex="0" class="btn btn-ghost lg:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                             </label>
                             <ul tabindex="0" class="menu menu-compact bg-neutral bg-opacity-60 dropdown-content mt-3 p-2 shadow  rounded-box w-52">
                                 {menuItems}
                             </ul>
-                        </div>
+                        </div> */}
+
+
                         <Link to='/' class="btn btn-ghost normal-case text-xl y">Islamicademy</Link>
                     </div>
+
+
+                    <div class="drawer lg:hidden">
+                        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                        <div class="drawer-content mt-2 text-[white] ">
+                            <label for="my-drawer" class="btn ml-4 btn-ghost drawer-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" class=" h-5-2  w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+
+                            </label>
+                            <Link to='/' class="btn btn-ghost normal-case text-xl y">Islamicademy</Link>
+
+                        </div>
+                        <div class="drawer-side mt-[16%]">
+                            <label for="my-drawer" class="drawer-overlay "></label>
+                            
+                            <ul class="p-5 menu bg-[black] text-[white]  bg-opacity-60 dropdown-content  w-[60%]  shadow">
+                      
+                                
+                                {menuItems}
+                                
+
+                            </ul>
+                        </div>
+                    </div>
+
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal mt-[1%] pb-[.6%]">
                             {menuItems}
@@ -106,11 +133,11 @@ const Header = () => {
 
 
                                         <div className='space-y-2'>
-                                        <Link to="/profile">
-                                            <li>
-                                                <img className='w-14 border border-[brown]  rounded-full'
-                                                    src="https://i.stack.imgur.com/frlIf.png" />
-                                            </li>
+                                            <Link to="/profile">
+                                                <li>
+                                                    <img className='w-14 border border-[brown]  rounded-full'
+                                                        src="https://i.stack.imgur.com/frlIf.png" />
+                                                </li>
                                             </Link>
                                             <Link to="/profile">
                                                 <li className='font-semibold text-[white]  text-lg hover:text-[brown]  word-break'>{user.displayName}</li>
