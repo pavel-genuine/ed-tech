@@ -11,6 +11,9 @@ const Course = (props) => {
                 <img loading='lazy' src={img} alt="" className="flex-none w-80  rounded-md bg-slate-100" />
                 <div className="min-w-0 relative flex-auto">
                     <h2 className="font-semibold text-slate-900 truncate pr-20">{title}</h2>
+
+
+
                     <div className="flex-none w-full mt-2 font-normal">
                         <dt className="sr-only">teacher</dt>
                         <dd className="text-slate-400"> Instructor : {tutor}</dd>

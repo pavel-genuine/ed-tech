@@ -8,3 +8,33 @@
 
 } 
 
+#toggler{
+   display: none; 
+}
+#toggler2{
+   display: none; 
+}
+
+
+@media only screen and (max-width: 688px) {
+
+.profile{
+    display: none;
+}
+.notification{
+    display: none;
+}
+
+
+#toggler:checked~.profile{
+
+    display: block;
+
+  }
+#toggler2:checked~.notification{
+
+    display: block;
+
+  }
+
+}
