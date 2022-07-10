@@ -164,7 +164,7 @@ const Header = () => {
 
 
 
-                    <div class="navbar-end ml-4 flex hidden lg:block">
+                    <div class="navbar-end ml-4 flex hidden lg:block mb-[-1%]">
 
 
                         {
