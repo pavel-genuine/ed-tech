@@ -14,9 +14,15 @@
 #toggler2{
    display: none; 
 }
+#bigToggler{
+   display: none; 
+}
+#bigToggler2{
+   display: none; 
+}
 
 
-@media only screen and (max-width: 688px) {
+/* @media only screen and (max-width: 688px) { */
 
 .profile{
     display: none;
@@ -31,10 +37,20 @@
     display: block;
 
   }
+#bigToggler2:checked~.notification{
+
+    display: block;
+
+  }
+#bigToggler:checked~.profile{
+
+    display: block;
+
+  }
 #toggler2:checked~.notification{
 
     display: block;
 
   }
 
-}
+/* } */
