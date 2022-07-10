@@ -204,7 +204,7 @@ const Header = () => {
                                                 src="https://i.stack.imgur.com/frlIf.png" />
                                         </div>
                                     </label>
-                                    <ul tabindex="0" class="profile space-y-4 divide divide-y mt-2  w-[450%] card card-compact  dropdown-content pl-4 pr-1 pt-4 pb-4 shadow-xl bg-[black] bg-opacity-60 rounded-box w-52">
+                                    <ul tabindex="0" class="profile space-y-4 divide divide-y mt-2  w-[350%] card card-compact  dropdown-content pl-4 pr-1 pt-4 pb-4 shadow-xl bg-[black] bg-opacity-60 rounded-box w-52">
 
 
 
