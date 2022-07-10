@@ -83,7 +83,7 @@ const Details = () => {
 
             <div className='mt-20   '>
                 <p className=' divide divide-y border md:w-[300%] border-t-white p-5 '>
-                <button className='btn bg-[grey] text-[white] border-none  hover:bg-[brown] '> <a href={`/enroll/${course?.id}`}>Enroll Now</a> </button>
+                <a href={`/enroll/${course?.id}`}><button className='btn bg-[grey] text-[white] border-none  hover:bg-[brown] '>Enroll Now</button></a>
            
            <p className='my-7 font-semibold text-lg'>Enrolled Student : 2k +</p>
            <p className='my-7 font-semibold text-lg'>Lectures : {course?.lectures}</p>
