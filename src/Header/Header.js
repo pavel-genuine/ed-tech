@@ -124,9 +124,9 @@ const Header = () => {
         <div>
 
             <div id='' className={background ?
-                'nav bg-[black] bg-opacity-60  backdrop-filter backdrop-blur-sm   text-[white] shadow '
+                'nav fixed bg-[black] bg-opacity-60  backdrop-filter backdrop-blur-sm   text-[white] shadow '
                 :
-                'nav text-[black] bg-opacity-60  backdrop-filter-none backdrop-blur-sm shadow'}>
+                'nav fixed text-[black] bg-opacity-60  backdrop-filter-none backdrop-blur-sm shadow'}>
                 <div class="lg:navbar lg:w-[82%] mx-auto ">
                     <div class="lg:navbar-start hidden md:block">
 
@@ -135,35 +135,26 @@ const Header = () => {
                     </div>
 
 
-                    <div class="drawer lg:hidden">
-                        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-                        <div class="drawer-content m-2  flex justify-between ">
+                   
 
-                            <div>
-                                <label for="my-drawer" class="btn  btn-ghost drawer-button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class=" h-5-2  w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-
-                                </label>
-                                <Link to='/' class="btn btn-ghost normal-case text-xl y">Islamicademy</Link>
-
-                            </div>
-
-                            {personalizeItems}
+                      <div className='lg:hidden flex justify-between items-center p-2'>
+                      <div class="dropdown">
+                            <label htmlFor='menuToggler' tabindex="0" class="btn btn-ghost ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                            </label>
+                            <input type="checkbox" name="" id="menuToggler" />
 
 
-                        </div>
-                        <div class="drawer-side mt-[16%]">
-                            <label for="my-drawer" class="drawer-overlay "></label>
-
-                            <ul class="p-5 menu bg-[black] text-[white]  bg-opacity-60 dropdown-content  w-[60%]  shadow">
-
-
+                            <ul tabindex="0" id="menuContent" class=" menu bg-[black] text-[white]  bg-opacity-60 menu menu-compact dropdown-content mt-3 p-4 shadow bg-base-100 rounded-box w-52">
                                 {menuItems}
-
-
                             </ul>
+                            <Link to='/' class="btn btn-ghost normal-case text-xl y">Islamicademy</Link>
+
                         </div>
-                    </div>
+                        {personalizeItems}
+                      </div>
+
+
 
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal mt-[1%] mx-28 pb-[.6%]">
@@ -173,7 +164,7 @@ const Header = () => {
 
 
 
-                    <div class="navbar-end ml-4 flex">
+                    <div class="navbar-end ml-4 flex hidden lg:block">
 
 
                         {
