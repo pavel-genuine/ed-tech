@@ -15,6 +15,7 @@ import Profile from './Profile/Profile';
 import EditProfile from './EditProfile/EditProfile';
 import EnrollCourse from './EnrollCourse/EnrollCourse';
 import RequireAuth from './RequireAuth/RequireAuth';
+import Promo from './Promo/Promo';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/enroll/:id' element={<EnrollCourse></EnrollCourse>} ></Route>
 
         <Route path='/courses' element={<AllCourses></AllCourses>}></Route>
+        <Route path='/promo' element={<Promo></Promo>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/contact' element={<ContactUs></ContactUs>}></Route>
         <Route path='/sign-up' element={<SignUp></SignUp>}></Route>

@@ -113,7 +113,7 @@ const Header = () => {
 
             <CustomLink class=" btn-ghost hover:rounded md:p-3 md:m-5" to='/'>Home</CustomLink>
             <CustomLink class="btn-ghost hover:rounded md:p-3 md:m-5" to='/courses'>All Courses</CustomLink>
-            <CustomLink class="btn-ghost hover:rounded md:p-3 md:m-5" to='/more'>Explore More</CustomLink>
+            <CustomLink class="btn-ghost hover:rounded md:p-3 md:m-5" to='/promo'>Promo</CustomLink>
 
             <CustomLink class="btn-ghost hover:rounded md:p-3 md:m-5" to='about'> About Us</CustomLink>
             <CustomLink class="btn-ghost hover:rounded md:p-3 md:m-5" to='/contact'>Contact Us</CustomLink>
@@ -123,10 +123,9 @@ const Header = () => {
     return (
         <div>
 
-            <div id='' className={background ?
+            <div id='' className=
                 'nav fixed bg-[black] bg-opacity-60  backdrop-filter backdrop-blur-sm   text-[white] shadow '
-                :
-                'nav fixed text-[black] bg-opacity-60  backdrop-filter-none backdrop-blur-sm shadow'}>
+            >
                 <div class="lg:navbar lg:w-[82%] mx-auto ">
                     <div class="lg:navbar-start hidden md:block">
 

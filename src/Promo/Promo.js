@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-import './Compilier.css'
+import './Promo.css'
 
 const Compilier = ({ onChange, language, code, theme }) => {
 
@@ -29,7 +29,7 @@ const Compilier = ({ onChange, language, code, theme }) => {
 
           <div class="w-64 carousel rounded-box promo">
 
-            <div style={{ zIndex: '10' }} className="bg-[red] absolute top-[76%] text-white w-[95%] md:w-[75%] justify-center flex h-[50px] px-3 py-3 opacity-80 ">
+            <div style={{ zIndex: '10' }} className="bg-[red] absolute top-[76%] text-white w-64 justify-center flex h-[50px] px-3 py-3 opacity-80 ">
 
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd" />
