@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-## Islamicademy, A Islamic online educational website.
+## Islamicademy, An Islamic online educational website.
 ## Live site : https://ed-tech-909ea.web.app/
 
 
